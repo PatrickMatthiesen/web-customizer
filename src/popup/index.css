@@ -1,0 +1,70 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  
+  width: 780px; /* any higher and it will be adding scroll bars to the popup*/
+  height: 600px;
+}
+
+#root {
+  margin: 0 auto;
+  padding: 1.3rem;
+}
+
+#head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
+
+/* Titles */
+h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  margin-top: 0;
+}
+
+
+.tab-button {
+  padding: 8px 16px;
+  background-color: transparent; /* No background */
+  color: #d1d5db; /* Light gray text */
+  border: none; /* No border */
+  border-bottom: 2px solid transparent; /* Invisible bottom border */
+  cursor: pointer;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  font-size: 16px; /* Adjust font size */
+  margin: 0 10px; /* Space between buttons */
+}
+
+.tab-button:hover {
+  background-color: #374151; /* Slightly lighter gray on hover */
+}
+
+.tab-button[aria-selected="true"] {
+  color: white; /* White text for the active button */
+  border-bottom: 2px solid white; /* White underline for the active button */
+}
+

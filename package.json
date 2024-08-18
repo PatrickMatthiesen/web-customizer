@@ -1,0 +1,43 @@
+{
+  "name": "web-customizer",
+  "displayName": "Web customizer",
+  "version": "0.0.1",
+  "description": "Customize any webpage just the way you want it.",
+  "author": "https://github.com/PatrickMatthiesen",
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "build:chrome": "plasmo build --target=chrome-mv3",
+    "build:firefox": "plasmo build --target=firefox-mv3",
+    "package": "plasmo package",
+    "package:chrome": "plasmo build --zip --target=chrome-mv3",
+    "package:firefox": "plasmo build --zip --target=firefox-mv3",
+    "test": "plasmo test"
+  },
+  "dependencies": {
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@uiw/codemirror-extensions-langs": "^4.23.0",
+    "@uiw/codemirror-theme-vscode": "^4.23.0",
+    "@uiw/react-codemirror": "^4.23.0",
+    "highlight.js": "^11.10.0",
+    "plasmo": "0.88.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@plasmohq/messaging": "^0.6.2",
+    "@ianvs/prettier-plugin-sort-imports": "4.3.1",
+    "@types/chrome": "0.0.270",
+    "@types/node": "22.4.0",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "prettier": "3.3.3",
+    "typescript": "5.5.4"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ],
+    "permissions": ["storage", "scripting", "webNavigation"]
+  }
+}
